@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import Button from '../Button';
 
 import MenuIcon from '../../assets/menu.svg';
 import Logo from '../../assets/logo.svg';
@@ -10,15 +12,16 @@ import Container from './styles';
 import Menu from '../Menu';
 
 const Navbar: React.FC = () => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
       <Container>
         <nav>
+          <Button onClick={() => setIsActive(!isActive)}>
+            <img src={MenuIcon} alt="Menu" className="hoverImage" />
+          </Button>
           <a href="/">
-            <img src={MenuIcon} alt="Menu" />
-          </a>
-          <a href="/">
-            <img src={Logo} alt="Logo" className="imageLogo" />
+            <img src={Logo} alt="Logo" className="hoverImage" />
           </a>
           <div>
             <a href="/">
@@ -28,12 +31,12 @@ const Navbar: React.FC = () => {
               <img src={Whatsapp} alt="Whatsapp" />
             </a>
             <a href="/">
-              <img src={Fiat} alt="Fiat logo" className="imageLogo" />
+              <img src={Fiat} alt="Fiat logo" className="hoverImage" />
             </a>
           </div>
         </nav>
       </Container>
-      <Menu />
+      {isActive && <Menu />}
     </>
   );
 };

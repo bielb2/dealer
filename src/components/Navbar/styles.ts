@@ -6,6 +6,7 @@ const Container = styled.header`
   width: 100%;
   height: 60px;
   background: var(--bg-color);
+  position: relative;
 
   nav {
     height: 100%;
@@ -14,7 +15,7 @@ const Container = styled.header`
     justify-content: space-between;
     padding: 0 24px;
 
-    .imageLogo {
+    .hoverImage {
       transition: opacity 0.3s;
       &:hover {
         opacity: 0.7;
