@@ -2,11 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root {
-    --bg-color: #2B222F;
-    --nav-color: #18131F;
+    --bg-color: #18131F;
+    --nav-color: #2B222F;
     --title-color: #FFFFFF;
     --titleSemi-color: #EDEDE3;
     --border-color: #726C75;
+    --bg-red-color: #FF1430;
   }
 
 
