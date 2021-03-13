@@ -6,17 +6,19 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
+  width: 100%;
   background: var(--nav-color);
   position: absolute;
-  width: 100%;
 
   ul {
     list-style-type: none;
 
     li {
       border-bottom: 2px solid var(--border-color);
+
       margin: 8px;
       padding-bottom: 12px;
+
       transition: border-color 0.4s;
 
       &:hover {
@@ -33,8 +35,8 @@ export const Container = styled.div<ContainerProps>`
   }
 
   div {
-    background: var(--bg-red-color);
     height: 50px;
+    background: var(--bg-red-color);
 
     display: flex;
     align-items: center;
@@ -49,10 +51,10 @@ export const Container = styled.div<ContainerProps>`
 
     button {
       color: #fff;
-      display: flex;
-
       font-weight: 600;
       font-size: 24px;
+
+      display: flex;
 
       svg {
         transform: ${({ isActive }) =>

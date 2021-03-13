@@ -10,7 +10,6 @@ export default createGlobalStyle`
     --bg-red-color: #FF1430;
   }
 
-
   * {
     margin: 0;
     padding: 0;
@@ -40,7 +39,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--title-color);
   }
 
   button, svg {

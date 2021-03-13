@@ -6,6 +6,7 @@ const Container = styled.div`
 
   footer {
     width: 50%;
+
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -23,9 +24,9 @@ const Container = styled.div`
       justify-content: center;
 
       border: 2px solid var(--bg-red-color);
+
       text-transform: uppercase;
 
-      font-size: 15px;
       transition: all 0.2s;
 
       &:hover {
