@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <Container>
       <footer>
         <img src={ProgressBar} alt="Barra de progresso" />
-        <button type="button">Ver todos os modelos</button>
+        <a href="/">Ver todos os modelos</a>
       </footer>
     </Container>
   );
