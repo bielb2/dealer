@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, ContentList, ContainerList } from './styles';
 
 const Menu: React.FC = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <Container>
       <div>
         <h1>Institucional</h1>
-        <span>Arrow</span>
+        <button type="button" onClick={() => setIsActive(!isActive)}>
+          ^^
+        </button>
       </div>
       <ContentList>
         <ul>

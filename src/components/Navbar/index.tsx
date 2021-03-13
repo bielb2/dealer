@@ -13,25 +13,25 @@ const Navbar: React.FC = () => {
   return (
     <>
       <Container>
-        <header>
-          <button type="button">
-            <img src={MenuIcon} alt="Menu" />
-          </button>
+        <nav>
           <a href="/">
-            <img src={Logo} alt="Logo" />
+            <img src={MenuIcon} alt="Menu" />
+          </a>
+          <a href="/">
+            <img src={Logo} alt="Logo" className="imageLogo" />
           </a>
           <div>
-            <button type="button">
+            <a href="/">
               <img src={Phone} alt="Telefone" />
-            </button>
-            <button type="button">
+            </a>
+            <a href="/">
               <img src={Whatsapp} alt="Whatsapp" />
-            </button>
-            <button type="button">
-              <img src={Fiat} alt="Fiat logo" />
-            </button>
+            </a>
+            <a href="/">
+              <img src={Fiat} alt="Fiat logo" className="imageLogo" />
+            </a>
           </div>
-        </header>
+        </nav>
       </Container>
       <Menu />
     </>
