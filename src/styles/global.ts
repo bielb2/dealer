@@ -24,13 +24,23 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  .bodyContent {
+    height: 100vh;
+  }
+
   body, input, button {
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
+    height: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6, strong {
+  h1, h2, h3, h4, h5, h6, strong, a {
     font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
   }
 
   button, svg {

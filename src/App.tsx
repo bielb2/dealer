@@ -1,13 +1,16 @@
 import React from 'react';
 
-import Header from './pages/Header';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
   return (
     <>
-      <Header />
+      <Navbar />
+      <div className="bodyContent" />
+      <Footer />
       <GlobalStyle />
     </>
   );
