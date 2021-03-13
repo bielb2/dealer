@@ -60,6 +60,11 @@ const Container = styled.header`
         }
       }
     }
+
+    @media screen and (max-width: 281px) {
+      padding: 0;
+      justify-content: space-around;
+    }
   }
 `;
 
