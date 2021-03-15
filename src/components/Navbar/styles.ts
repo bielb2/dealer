@@ -27,7 +27,7 @@ const Container = styled.header`
 
     div {
       display: flex;
-      align-content: center;
+      align-items: center;
 
       a {
         width: 27px;
@@ -56,7 +56,7 @@ const Container = styled.header`
         }
 
         & + a {
-          margin-left: 16px;
+          margin: 0 8px;
         }
       }
     }
